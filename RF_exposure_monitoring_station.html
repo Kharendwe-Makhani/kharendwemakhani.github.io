@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>RF Exposure Monitoring Station</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/avatar/avatar.jpg" type="image/x-icon">
+
+		<script>
+			// Remove .html extension from page name
+			if (window.history.replaceState) {
+				window.history.replaceState(null, null, window.location.href.replace('.html', ''));
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar/cv photo copy_resized.jpg" style alt="A selfie of myself" /></a>
+					<h1>This is my<strong> RF Exposure Monitoring Station</strong> project.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>RF Exposure Monitoring Station</h2>
+						</header>
+						<p>
+                            As part of my final year project, I was tasked with designing and manufacturing a low cost radio frequency (RF) exposure monitoring
+                            station that can be located on a rooftop environment to continuously measure RF expsoure on the site to ensure that these RF emissions
+                            are compliant with all safety standards for human exposure as defined in the ICNIRP standard.
+                            Furthermore, the data pertaining to this RF emission was to be sent to a cloud-hosted time-series database where it can be furher analysed
+                            and displayed on a browser-based dashboard.   
+						</p>
+                        <img src="images/RF exposure/Calibration.png" class="rf-calibration" alt="calibration of device">
+                        <p>
+                            The design was followed by a meticulous process of calibrating a software-defined radio (SDR) inside an anechoic chamber which would 
+                            act a low cost radio frequency signal
+                            processor. IQ sampling was used to extact data from the SDR pertaining to the RF exposure. 
+						</p>
+                        <img src="images/RF exposure/RF expsoure monitoring station.jpg" class="monitoring-station">
+                        <p>
+                            The RF exposure monitoring station consisted of a simple monopole antenna that detects radio frequencies, a software-defined radio (SDR)
+                            that processes the signals received, and a raspberry pi which runs code to find the RF exposure level from the IQ samples from the SDR.
+                        </p>
+                        <img src="images/RF exposure/Browser-based dashboard.png" class="browser-dashboard">
+                        <p>
+                            The raspberry pi also ran code that sent the RF exposure data to a cloud-hosted time-series database where it was displayed on a browser-based
+                            dashboard.
+                        </p>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</section>
+
+                    <!-- Three -->
+				
+
+			</div>
+		
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kharendwe-makhani-777jy0" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>					
+					</div>
+				</footer>	
+	
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>	
+	
+	
+		</body>				
+	</html>				

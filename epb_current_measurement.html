@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Coin Sorter</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" href="images/avatar/avatar.jpg" type="image/x-icon">
+
+		<script>
+			// Remove .html extension from page name
+			if (window.history.replaceState) {
+				window.history.replaceState(null, null, window.location.href.replace('.html', ''));
+			}
+		</script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="#" class="image avatar"><img src="images/avatar/cv photo copy_resized.jpg" style alt="A selfie of myself" /></a>
+					<h1>This is my<strong> EPB current measurement system</strong> project.</h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>EPB Current Measurement System</h2>
+						</header>
+						<p>
+                            As part of my vacation work at MellowVans I was tasked with creating a system that measures the amount 
+                            of current it takes to fully engage an electronic parking brake (EPB) onto a brake disk. I did this by designing a 
+                            circuit that included a a MellowVans I_SENSE logic control unit that was used to actuate a relay switch which acted 
+                            as an easy way of electronically opening and closing the path for current flowing to the EPB. An ACHS-7123 current sensor 
+                            was placed in series with the relay switch just before the EPB, 
+                            this sensor was used to read the current being drawn by the EPB using an Arduino Mega 2560. For safety 
+                            reasons, a 20A fuse was placed just after the current sensor to prevent excessive current from 
+                            being drawn by the EPB when engaging on a load.
+						</p>
+                        <img src="images/epb current system/circuit digram.png" class="cad-coinsorter" alt="curcuit diagram">
+                        <p>
+                            To complete the measurement system, brake 
+                            pads were connected to the EPB, and a brake disc was placed in between them. After this, the 
+                            EPB was actuated until the brake pads fully engaged on the brake disc, and the current was 
+                            read off from an Arduino IDE monitor or terminal.
+						</p>
+                        <img src="images/epb current system/epb current system.jpeg" class="real-coinsorter" alt="EPB current measurement system">
+                    
+						<!-- <ul class="actions">
+							<li><a href="#" class="button">Learn More</a></li>
+						</ul> -->
+					</section>
+
+                    
+
+			</div>
+		
+			<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/kharendwe-makhani-777jy0" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>					
+					</div>
+				</footer>	
+	
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>	
+	
+	
+		</body>				
+	</html>				
